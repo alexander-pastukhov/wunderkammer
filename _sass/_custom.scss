@@ -4,6 +4,7 @@ $bamberg-color: #00457D;
 $bamberg-light-color: #5F8AD3;
 $bamberg-dark-color: #00325B;
 
+// button
 
 .btn-bamberg { 
     background-color: white; 
@@ -13,7 +14,7 @@ $bamberg-dark-color: #00325B;
 } 
 
 .btn-bamberg:hover { 
-    background-color: $bamberg-light-color; 
+    background-color: $bamberg-color; 
     color: #fff; 
     border-color: $bamberg-color;
 }
@@ -22,6 +23,8 @@ $bamberg-dark-color: #00325B;
     background-color: $bamberg-color;
 }
 
+
+// navbar
 .navbar-bamberg {
     background-color: $bamberg-color;
     padding: 1rem 2rem;
@@ -72,6 +75,12 @@ $bamberg-dark-color: #00325B;
   a:hover {
     color: $bamberg-light-color;
   }
+
+// container
+.container-bamberg {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
 
 
 // range

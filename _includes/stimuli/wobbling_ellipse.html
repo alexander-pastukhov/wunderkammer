@@ -1,0 +1,37 @@
+<div class="container container-bamberg">
+    <div class= "row">
+        <div class="col-md-8" style="text-align: center;">
+            <canvas id="WE-Canvas" presentation_type= 'main' hidpi="off" width= "600" height= "600" style="background:black; text-align: center;"></canvas>
+        </div>
+        <div class="col-md-4 well">
+            
+            
+            <div class="form-check form-switch">
+                <input class="form-check-input checkbox-bamberg" type="checkbox" id="WE_start_stop" checked><label class="form-check-label" for="WE_start_stop">Play</label>
+            </div>
+
+            <hr/>
+
+            <label for="WE_rpm" class="form-label">Rotation speed (rpm)</label>
+            <input type="range" class="form-range range-bamberg" id="WE_rpm" min="1" max="60" value="15">
+
+            <label for="WE_contrast" class="form-label">Contrast</label>
+            <input type="range" class="form-range range-bamberg" id="WE_contrast" min="1" max="100" value="100" oninput="adjust_contrast()">
+
+            <label for="WE_axis_ratio" class="form-label">Axes ratio</label>
+            <input type="range" class="form-range range-bamberg" id="WE_axis_ratio" min="0.1" max="1" step="0.05" value="0.95" oninput="adjust_axes_ratio()">
+
+            <hr/>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input checkbox-bamberg" type="checkbox" id="WE_sattelites" onclick="on_WE_sattelites_change()"><label class="form-check-label" for="WE_sattelites">Sattelite dots</label>
+            </div>
+
+            <div class="form-check form-switch">
+                <input class="form-check-input checkbox-bamberg" type="checkbox" id="WE_sattelites_direction" checked><label class="form-check-label" for="WE_sattelites_direction">Sattelite rotate in the same direction</label>
+            </div>                    
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/stimuli/js/wobbling_ellipse.js' | relative_url }}"></script>

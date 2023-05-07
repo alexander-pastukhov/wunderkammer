@@ -1,6 +1,10 @@
 - title: Shape from shading
   page: sfs
   icon: sfs.png
+
 - title: Lilac chaser
   page: lilac_chaser
+
+- title: Wobbling ellipse
+  page: wobbling_ellipse
   

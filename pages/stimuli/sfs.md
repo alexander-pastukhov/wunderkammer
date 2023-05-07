@@ -4,9 +4,7 @@ title: Shape from Shading
 
  What do you see: convex "eggs" that "stick out" of the screen or concave "egg crates"? Click on them to flip them around!
 
-<br/>
 {% include stimuli/sfs.html %}
-<br/>
 
 #### Why do I see 3D shapes on my 2D screen?
 We live in a 3D world but your visual system has access only to the 2D images on your retina. 
