@@ -6,7 +6,7 @@ layout: page
 ## Visual Displays
 
 
-
-{% for entry in site.data.stimuli %}
-![test](assets/stimuli/icon/sfs.png)    
+{% assign sorted_stimuli =  site.data.stimuli | (sort: 'title') %}
+{% for entry in sorted_stimuli %}
+* [{{entry.title}}]({{entry.page}})
 {% endfor %}
