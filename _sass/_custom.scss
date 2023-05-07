@@ -1,0 +1,92 @@
+/* add your scss tweaks here */
+
+$bamberg-color: #00457D;
+$bamberg-light-color: #5F8AD3;
+$bamberg-dark-color: #00325B;
+
+
+.btn-bamberg { 
+    background-color: white; 
+    color: $bamberg-color; 
+    border-color: $bamberg-color; 
+    padding: 0.45rem 1.25rem; 
+} 
+
+.btn-bamberg:hover { 
+    background-color: $bamberg-light-color; 
+    color: #fff; 
+    border-color: $bamberg-color;
+}
+
+.bg-bamberg {
+    background-color: $bamberg-color;
+}
+
+.navbar-bamberg {
+    background-color: $bamberg-color;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.25rem 0.5rem $bamberg-dark-color;
+  }
+
+  .navbar-brand {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #fff;
+    letter-spacing: 0.5px;
+  }
+
+  .navbar-nav {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.25px;
+  }
+
+  .nav-item {
+    padding: 0.75rem 0;
+  }
+
+  .navbar-brand:hover {
+    color: $bamberg-light-color; 
+  }
+
+  .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.125rem;
+    background-color: $bamberg-color;
+  }
+
+  .nav-link:hover,
+  .nav-link:focus {
+    color: $bamberg-light-color;
+    background-color: $bamberg-color;
+  }
+
+  a {
+    color: $bamberg-color;
+  }
+
+  a:hover {
+    color: $bamberg-light-color;
+  }
+
+
+// range
+.range-bamberg::-webkit-slider-thumb {
+  background: $bamberg-color;
+}
+.range-bamberg::-moz-range-thumb {
+   background: $bamberg-color;
+ }
+ .range-bamberg::-ms-thumb {
+   background: $bamberg-color;
+ }
+
+ // checkbox
+ .form-check-input:checked {
+  background-color: $bamberg-color;
+  border-color: $bamberg-light-color;
+}
