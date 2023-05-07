@@ -12,7 +12,7 @@ Yes, you have two eyes and because images that fall on them are slightly differe
 However, stereoscopic depth alone cannot help you if an object is further than a few meters away or if you can see it clearly only with one eye.
 Which is why your visual system uses a variety of tricks to recover the missing 3D information. 
 (Close one of your eyes to see that the world does not suddenly become flat in the absence of the stereoscopic depth.)
-For example, it may look at <a href= 'SFM'> how the object moves</a>.
+For example, it may look at <a href= 'KDE'> how the object moves</a>.
 Or it can look at a characteristic pattern of bright and shaded regions to infer its 3D structure and the location of the light source.
 
 #### Why do I see either an "egg" or an "egg crate"?

@@ -8,3 +8,6 @@
 - title: Wobbling ellipse
   page: wobbling_ellipse
   
+- title: Kinetic depth effect, a. k. a. Structure from Motion
+  page: kde
+  

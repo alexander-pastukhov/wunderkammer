@@ -1,0 +1,44 @@
+<div class="container container-bamberg">
+    <div class= "row">
+        <div class="col-md-1">
+        </div>
+        <div class="col-md-7" style="text-align:center;">
+            <canvas id="SFM-Canvas" presentation_type= 'main' hidpi="off" width= "600" height= "600" style="background:grey; text-align:center;"></canvas>
+        </div>
+        <div class="col-md-4 well">
+            <div class="form-check form-switch">
+                <input class="form-check-input checkbox-bamberg" type="checkbox" id="sfm_start_stop" checked><label class="form-check-label" for="sfm_start_stop">Play</label>
+            </div>
+
+            <hr />
+
+            <div class="row">
+                <div class="col-lg-6"><label >Shape</label><br>
+                    <div class="form-check" id="kde-shape-group">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="sfm_shape_list">
+            </div>
+            <hr />
+
+            <label for="sfm_x_rpm" class="form-label">Rotation X (rpm)</label>
+            <input type="range" class="form-range range-bamberg" id="sfm_x_rpm" min="0" max="60" value="0">
+
+            <label for="sfm_y_rpm" class="form-label">Rotation X (rpm)</label>
+            <input type="range" class="form-range range-bamberg" id="sfm_y_rpm" min="0" max="60" value="15">
+
+            <label for="sfm_z_rpm" class="form-label">Rotation X (rpm)</label>
+            <input type="range" class="form-range range-bamberg" id="sfm_z_rpm" min="0" max="60" value="0">
+
+            <label for="sfm_dot_size" class="form-label">Rotation bias via dot size</label>
+            <input type="range" class="form-range range-bamberg" id="sfm_dot_size" min="-100" max="100" value="0">
+
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/numeric.js' | relative_url }}"></script>
+<script src="{{ '/assets/stimuli/js/kde.js' | relative_url }}"></script>
