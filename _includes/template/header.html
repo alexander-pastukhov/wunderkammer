@@ -13,7 +13,8 @@
                       Visual Displays
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for entry in site.data.stimuli %}
+                        {% assign sorted_stimuli =  site.data.stimuli | (sort: 'title') %}
+                        {% for entry in sorted_stimuli | (sort: "title") %}
                             <li><a class="dropdown-item" href="{{entry.page}}">{{entry.title}}</a></li>
                         {% endfor %}
                     </ul>
