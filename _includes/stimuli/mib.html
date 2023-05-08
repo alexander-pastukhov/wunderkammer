@@ -1,0 +1,34 @@
+<div class="container container-bamberg">
+    <div class= "row">
+        <div class="col-md-6">
+            <canvas id="MIB-Canvas" presentation_type= 'main' hidpi="off" width= "600" height= "600" style="background:black" align="center"></canvas>
+        </div>
+        <div class="col-md-4 offset-md-1">
+            <div class="well">
+                <div class="form-check form-switch">
+                    <input class="form-check-input checkbox-bamberg" type="checkbox" id="mib_start_stop" checked><label class="form-check-label" for="mib_start_stop">Play</label>
+                </div>
+                
+                <hr/>
+
+                <label for="mib_rpm" class="form-label">Rotation speed (rpm)</label>
+                <input type="range" class="form-range range-bamberg" id="mib_rpm" min="1" max="60" value="15">
+    
+                <label for="mib_target_radius" class="form-label">Target radius</label>
+                <input type="range" class="form-range range-bamberg" id="mib_target_radius" min="1" max="30" value="10" oninput="adjust_target_radii()">
+
+                <label for="mib_protection_zone_radius" class="form-label">Protection zone</label>
+                <input type="range" class="form-range range-bamberg" id="mib_protection_zone_radius" min="1" max="30" value="10" oninput="adjust_target_radii()">
+
+                <hr/>
+
+                <div class="form-check form-switch">
+                    <input class="form-check-input checkbox-bamberg" type="checkbox" id="mib_blinking_targets"><label class="form-check-label" for="mib_blinking_targets">Blinking targets</label>
+                </div>
+            </div>          
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/numeric.js' | relative_url }}"></script>
+<script src="{{ '/assets/stimuli/js/MIB.js' | relative_url }}"></script>
