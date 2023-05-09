@@ -22,5 +22,8 @@ Representations of two alternative rotations compete in your visual system, but 
 When the one you saw finally loses, you "switch" to a different direction of rotation.
 You can help one of them by either concentrating on it (helps a little bit) or by changing the relative size of dots (helps a lot by making some dots look "closer" to you than the others).
 
-The switching phenomenon you experience is called **multi-stable perception**. For more example like this, take a look <a href='neckercube'>Necker cube</a> and <a href='SFS'>Shape-from-shading</a> displays.
+The switching phenomenon you experience is called **multi-stable perception**. For more example like this, take a look [Necker cube](nc) and [Shape-from-shading](SFS) displays.
 
+<!-- References -->
+{% assign entry = site.data.stimuli | where: 'page', 'kde' %}
+{% include_relative references.md %}

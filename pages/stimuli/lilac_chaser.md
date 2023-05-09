@@ -19,4 +19,4 @@ This effect is called "Troxler's fading" and is also caused by neural fatigue of
 Their fatigue means that even in the presence of a magenta blob, they can fire only as strongly as the "green-minus-magenta" ones, turning patch into grey. 
 Moving your eyes puts magenta blobs to a different location on your retina, where corresponding neurons are not adapted and the color-contrast representation is again a correct one.
 
-If you want to see more disappearing dots, take a look at <a href='MIB'>motion-induced blindness display</a>!
+If you want to see more disappearing dots, take a look at [motion-induced blindness display](MIB)!

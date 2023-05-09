@@ -16,7 +16,6 @@ In both cases, visual system tries to use information around that spot to "fill 
 
 You can make your visual system to take yellow dots more seriously by making them bigger or putting a protection zone around them to keep the motion away. Or, you can make them blink: now they **really** disappear!
 
----
-
-#### References
-* Bonneh, Y. S., Cooperman, A., & Sagi, D. (2001). _Motion-induced blindness in normal observers._ Nature, 411(6839), 798-801. doi:[10.1038/35081073](https://doi.org/10.1038/35081073)
+<!-- References -->
+{% assign entry = site.data.stimuli | where: 'page', 'mib' %}
+{% include_relative references.md %}

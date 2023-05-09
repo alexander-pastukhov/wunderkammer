@@ -14,9 +14,9 @@ If you are looking at Necker cube together with someone else, try telling what y
 
 Necker cube was accidentaly discovered in 1832 by Swiss crystallographer Louis Albert Necker. He observed that crystals in published figures and engraved plates would sometimes suddenly and involuntary change their apparent position (orientation). He also found that he could (to a certain extent) control his perception by focusing on a particular vertex of the cube.
 
-The switching phenomenon you experience is called **multi-stable perception**. For more example like this, take a look <a href='SFS'>Shape-from-shading</a> and <a href='KDE'>Kinetic-depth effect</a> displays.
+The switching phenomenon you experience is called **multi-stable perception**. For more example like this, take a look [Shape-from-shading](SFS) and [Kinetic-depth effect](KDE) displays.
 
----
+<!-- References -->
+{% assign entry = site.data.stimuli | where: 'page', 'nc' %}
+{% include_relative references.md %}
 
-#### References
-* Necker, L. A. (1832). _Observations on some remarkable phenomena seen in Switzerland; and an optical phenomenon which occurs on viewing of a crystal or geometrical solid._ Philosophical Magazine, 1, 329–337. doi:[10.1080/14786443208647909](https://doi.org/10.1080/14786443208647909)
