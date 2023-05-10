@@ -1,32 +1,47 @@
 - title: Shape from shading
+  type: stimulus
+  tags:
+  - multistability
   page: sfs
   icon: sfs.png
 
 - title: Lilac chaser
+  type: stimulus
+  tags:
+  - adaptation
   page: lilac_chaser
 
 - title: Wobbling ellipse
+  type: stimulus
   page: wobbling_ellipse
   
 - title: Kinetic depth effect / Structure from Motion
+  type: stimulus
+  tags:
+  - multistability
   page: kde
   references :
   - title: "Wallach, H., & O'Connell, D. N. (1953). The kinetic depth effect. Journal of Experimental Psychology, 45(4), 205-217."
     doi: doi.org/10.1037/h0056880
   
 - title: Necker Cube
+  type: stimulus
+  tags:
+  - multistability
   page: nc
   references :
   - title : "Necker, L. A. (1832). _Observations on some remarkable phenomena seen in Switzerland; and an optical phenomenon which occurs on viewing of a crystal or geometrical solid._ Philosophical Magazine, 1, 329-337."
     doi: 10.1080/14786443208647909
 
 - title: Motion-induced blindness
+  type: stimulus
   page: mib
   references :
   - title : "Bonneh, Y. S., Cooperman, A., & Sagi, D. (2001). _Motion-induced blindness in normal observers._ Nature, 411(6839), 798-801."
     doi : 10.1038/35081073
   
 - title: Biological motion
+  type: stimulus
   page: biomotion
   references :
     - title : "All motion sequence are taken from  Vanrie & Verfaillie (2004) _Perception of biological motion: a stimulus set of human point-light actions._ Behavior Research Methods, Instruments, & Computers, 36(4), 625-9."
