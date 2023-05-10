@@ -1,0 +1,55 @@
+<div class="container container-bamberg">
+    <div class= "row">
+        <div class="col-md-6" style="text-align:center;">
+            <canvas id="LG-Canvas" presentation_type= 'main' hidpi="off" width= "600" height= "600" style="background:grey;border:1px solid #000000;"></canvas>
+        </div>
+        <div class="col-md-6 well" style="text-align:center;">
+            <div class="row" style="text-align:center;" id="LG-controls">
+                <button id="LG_start" type="button" class="btn btn-bamberg btn-lg" onclick="start_experiment()">Start</button>
+            </div>
+
+            <div id="LG-results" style="display:none">
+            <hr />
+                <label>Trials with <span style="color:green">global</span> shape:</label>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Correct</label></div>
+                    <div class="col-lg-7" id="LG-global-correct">5/5</div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Response time</label></div>
+                    <div class="col-lg-7" id="LG-global-RT">100 &plusmn; 30 ms</div>
+                </div> 
+                <br />
+                <label>Trials with <span style="color:green">local</span> shape:</label>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Correct</label></div>
+                    <div class="col-lg-7" id="LG-local-correct">5/5</div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Response time</label></div>
+                    <div class="col-lg-7" id="LG-local-RT">100 &plusmn; 30 ms</div>
+                </div>
+                <br /> 
+                <label>Trials with <span style="color:red">other</span> shapes:</label>
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Correct</label></div>
+                    <div class="col-lg-7" id="LG-other-correct">5/5</div>
+                </div> 
+                <div class="row">
+                    <div class="col-lg-1"></div>
+                    <div class="col-lg-4"><label>Response time</label></div>
+                    <div class="col-lg-7" id="LG-other-RT">100 &plusmn; 30 ms</div>
+                </div> 
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/js/numeric.js' | relative_url }}"></script>
+<script src="{{ '/assets/stimuli/js/localglobal.js' | relative_url }}"></script>

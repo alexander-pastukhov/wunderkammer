@@ -46,3 +46,7 @@
   references :
     - title : "All motion sequence are taken from  Vanrie & Verfaillie (2004) _Perception of biological motion: a stimulus set of human point-light actions._ Behavior Research Methods, Instruments, & Computers, 36(4), 625-9."
       doi : 10.3758/BF03206542
+
+- title: Local versus global processing
+  type: experiment
+  page: localglobal
