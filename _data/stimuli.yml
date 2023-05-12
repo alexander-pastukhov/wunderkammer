@@ -50,3 +50,8 @@
 - title: Local versus global processing
   type: experiment
   page: localglobal
+
+- title: Visual search
+  type: experiment
+  page: visual_search
+
