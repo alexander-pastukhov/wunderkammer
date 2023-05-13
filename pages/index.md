@@ -3,10 +3,12 @@ title:
 layout: page
 ---
 
-## Visual Displays
+## Something to see
 
+{% assign sorted_entries =  site.data.stimuli | sort: 'title' | where: 'type', 'stimulus'  %}
+{% include catalog.html %}
 
-{% assign sorted_stimuli =  site.data.stimuli | sort: 'title' %}
-{% for entry in sorted_stimuli %}
-* [{{entry.title}}]({{entry.page}})
-{% endfor %}
+## Something to do
+
+{% assign sorted_entries =  site.data.stimuli | sort: 'title' | where: 'type', 'experiment'  %}
+{% include catalog.html %}

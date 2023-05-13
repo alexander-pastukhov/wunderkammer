@@ -10,32 +10,34 @@
             <ul class="navbar-nav me-auto">
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Visual Displays
+                      Something to see
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% assign sorted_stimuli =  site.data.stimuli | (sort: 'title') %}
-                        {% for entry in sorted_stimuli | (sort: "title") %}
+                        {% assign sorted_stimuli =  site.data.stimuli | sort: 'title' | where: 'type', 'stimulus'  %}
+                        {% for entry in sorted_stimuli %}
                             <li><a class="dropdown-item" href="{{entry.page}}">{{entry.title}}</a></li>
                         {% endfor %}
                     </ul>
                 </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Something to do
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% assign sorted_experiments =  site.data.stimuli | sort: 'title' | where: 'type', 'experiment'  %}
+                        {% for entry in sorted_experiments %}
+                            <li><a class="dropdown-item" href="{{entry.page}}">{{entry.title}}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>                
             </ul>
-            {% if site.search == true %}
-            <script>
-                function site_search() {
-                    var query = document.getElementById("site-search").value;
-                    window.open("{{ '/search.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
-                    }
-            </script>
-            <form class="d-flex" onsubmit="site_search(); return false;">
-                <div class="input-group">
-                    <input id="site-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <div class="input-group-append">
-                        <button class="btn btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
-                    </div>
-                </div>
-            </form>
-            {% endif %}
+
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="https://alexander-pastukhov.github.io/">Back to Sasha's website</a>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

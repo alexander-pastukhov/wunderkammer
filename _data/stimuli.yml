@@ -15,7 +15,7 @@
   type: stimulus
   page: wobbling_ellipse
   
-- title: Kinetic depth effect / Structure from Motion
+- title: Kinetic depth effect
   type: stimulus
   tags:
   - multistability

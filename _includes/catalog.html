@@ -1,0 +1,10 @@
+<div class="row">
+    {% for entry in sorted_entries %}
+    <div class="col-md-2" style="text-align: center;padding: 1em;">
+        <a href="{{entry.page}}">
+            <div class="row"><img class="img-fluid" src="assets/stimuli/icon/{{entry.page}}.png"></div>
+            <div class="row"><h5>{{entry.title}}</h5></div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
