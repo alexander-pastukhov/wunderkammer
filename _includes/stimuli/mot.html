@@ -1,0 +1,64 @@
+<div class="container container-bamberg">
+    <!-- Instructions -->
+    <div class="row">
+        <div class="col-lg-2" style="text-align: right;">
+            <img src="assets/stimuli/img/mot_instructions_cue.png">
+        </div>
+        <div class="col-lg-2" style="text-align: left;">
+            <p >
+                Once you press <strong>Start</strong>, planes you need to track will blink green for a short time.
+            </p>
+        </div>
+        <div class="col-lg-2" style="text-align: right;">
+            <img src="assets/stimuli/img/mot_instructions_track.png">
+        </div>    
+        <div class="col-lg-2" style="text-align: left;">
+            <p >
+                Keep tracking target planes, while they fly around.
+            </p>
+        </div>
+        <div class="col-lg-2" style="text-align: right;">
+            <img src="assets/stimuli/img/mot_instructions_answer.png">
+        </div>    
+        <div class="col-lg-2" style="text-align: left;">
+            <p >
+                Was the yellow plane one of the planes you were tracking? Targets planes will blink <strong><span style="color:green">green</span></strong> if you were correct and <strong><span style="color:red">red</span></strong>, if you made a mistake.
+            </p>
+        </div>
+    </div>
+
+    <img id="plane" src="assets/stimuli/img/mot_plane.svg" hidden>
+
+    <div class= "row">
+        <canvas class="col-md-6" id="MOT-Canvas" presentation_type= 'main' hidpi="off" style="background:white;border:1px solid #000000;"></canvas>
+        <div class="col-md-5 offset-md-1" id="mot_controls">
+            <div class="well">
+                <label for="mot_total" class="form-label">Total number of planes: <span id="mot_total_label">6</span></label>
+                <input type="range" class="form-range range-bamberg" id="mot_total" min="1" max="16" value="6" label="mot_total_label" oninput="onTotalChange()">
+    
+                <label for="mot_targets" class="form-label">Planes to track: <span id="mot_targets_label">3</span></label>
+                <input type="range" class="form-range range-bamberg" id="mot_targets" min="1" max="16" value="3" label="mot_targets_label" oninput="onTargetsChange()">
+      
+                <label for="mot_duration" class="form-label">Trial duration: <span id="mot_duration_label">5</span> seconds</label>
+                <input type="range" class="form-range range-bamberg" id="mot_duration" min="5" max="20" value="5" label="mot_duration_label" oninput="onDurationChange()">
+
+                <hr />
+                <div class="row">
+                    <label>Difficutly presets:</label>
+                </div>
+                <div class="row" style="text-align: center;">
+                    <button type="button" class="btn btn-bamberg" level="easy" onclick="onPreset(2, 1)">Easy</button>
+                    <button type="button" class="btn btn-bamberg" level="medium" onclick="onPreset(4, 2)">Medium</button>
+                    <button type="button" class="btn btn-bamberg" level="hard" onclick="onPreset(8, 4)">Hard</button>
+                    <button type="button" class="btn btn-bamberg" level="insane" onclick="onPreset(16, 8)">Insane</button>
+                </div>
+                <hr />
+                <div class="row" style="text-align: center;">
+                    <button id="mot_start" type="button" class="btn btn-success" onclick="onStart()">Start</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="{{ '/assets/stimuli/js/MOT.js' | relative_url }}"></script>
