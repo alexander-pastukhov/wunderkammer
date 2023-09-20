@@ -65,7 +65,7 @@ window.onload = function () {
             xhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xhttp.addEventListener("load", initialize_display);
-        xhttp.open("GET", "/assets/stimuli/biomotion.xml", true);
+        xhttp.open("GET", "/wunderkammer/assets/stimuli/biomotion.xml", true);
         xhttp.send();
     }
 

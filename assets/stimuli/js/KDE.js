@@ -66,8 +66,7 @@
             xhttp = new ActiveXObject("Microsoft.XMLHTTP");
         }
         xhttp.addEventListener("load", initialize_display);
-        // xhttp.open("GET", "/assets/stimuli/kde-shapes.xml", true);
-        xhttp.open("GET", "wunderkammer/assets/stimuli/kde-shapes.xml", true);
+        xhttp.open("GET", "/wunderkammer/assets/stimuli/kde-shapes.xml", true);
         xhttp.send();
     }
 
